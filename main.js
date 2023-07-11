@@ -3,14 +3,16 @@ const path = require('path');
 
 function createWindow() {
     const win = new BrowserWindow({ // Crea una nueva ventana de Electron
-        width: 800,
-        height: 600,
+        // titleBarStyle: 'hidden', // Oculta la barra de título
+        icon: "src/favicon.ico",
+        width: 1024,
+        height: 768,
         autoHideMenuBar: true, // Opción adicional para Windows
         webPreferences: {
             nodeIntegration: true,
-        },
+        }
     });
-
+    win.maximize(); // Iniciar maximizada
     win.setMenuBarVisibility(false); // Ocultar la barra de menú
 
     // Carga el archivo index.html de tu aplicación Angular
@@ -19,6 +21,7 @@ function createWindow() {
 
 // Evento de Electron: cuando la aplicación está lista
 app.whenReady().then(() => {
+    // app.setName("Seyfer Studios: YouTube's Videos Formating Web Native Tool");
     createWindow();
 
     // Cierra la aplicación cuando todas las ventanas están cerradas
