@@ -1,0 +1,27 @@
+.mat-toolbar {
+    background-color: #009a03;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mat-toolbar p {
+    margin: 0;
+}
+
+.mat-toolbar img {
+    width: 25px;
+    object-fit: contain;
+}
+
+.mat-toolbar a {
+    display: flex;
+}
+
+.flex-row {
+    display: flex;
+    gap: 5px;
+}
+
+.border-logo {
+    border: 1px outset black;
+}

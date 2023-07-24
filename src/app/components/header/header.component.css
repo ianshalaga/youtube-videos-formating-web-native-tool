@@ -1,0 +1,29 @@
+.mat-toolbar {
+    background-color: #cb0000;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.mat-toolbar img {
+    width: 35px; /* Tamaño del logo limitado al tamaño de de la toolbar */
+    object-fit: contain;
+}
+
+.mat-toolbar h1 {
+    margin: 0; /* Permite centrar verticalmente el encabezado */
+}
+
+.mat-toolbar a {
+    text-decoration: none;
+    display: flex; /* Permite centrar la imagen verticalmente */
+}
+
+.flex-row {
+    display: flex;
+    gap: 10px;
+}
+
+.mat-toolbar .logo {
+    width: 55px;
+}

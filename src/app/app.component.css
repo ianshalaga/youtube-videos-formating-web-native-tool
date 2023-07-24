@@ -1,0 +1,11 @@
+/* https://coolors.co/cb0000-c6caed-ada8be-a28497-009a03 */
+
+:host { /* body tag */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Todo el viewport */
+}
+
+.app-main {
+    flex-grow: 1; /* Ocupa todo es espacio del viewport ss*/
+}
